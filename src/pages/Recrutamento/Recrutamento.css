@@ -1,0 +1,101 @@
+/* Estilos gerais */
+
+  .recrutamentos-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+
+  .header {
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fdf1e1;
+    border: 1px solid #ccc;
+  }
+  
+  .logo {
+    height: 40px;
+  }
+  
+  .header nav a {
+    margin-left: 20px;
+    color: #2c2c54;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .header nav a:hover {
+    color: #FF8C40;
+  }
+  
+  /* Título */
+  .title {
+    font-size: 2em;
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  /* Lista de Recrutamentos */
+  .recrutamentos-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .recrutamento-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    color: #333;
+  }
+  
+  .termino {
+    color: #FF8C40;
+    font-weight: 600;
+  }
+  
+  /* Botão Criar */
+  .create-button {
+    padding: 10px 20px;
+    background-color: #FF8C40;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .create-button:hover {
+    background-color: #e0732d;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 600px) {
+    .recrutamento-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .termino {
+      margin-top: 5px;
+      align-self: flex-end;
+    }
+  
+    .create-button {
+      width: 100%;
+      padding: 15px;
+    }
+  }
+  

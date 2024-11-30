@@ -1,0 +1,59 @@
+/* FormularioCadastro.css */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  font-size: 1rem;
+  color: #333; /* Cor dos labels */
+  margin-bottom: 0.5rem;
+}
+
+.form-input {
+  background-color: #f9f9f9; /* Fundo claro para os campos de entrada */
+  color: #333; /* Texto escuro nos campos */
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #ccc; /* Borda suave */
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border: 1px solid #d88f06; /* Borda ao focar */
+  background-color: #fff; /* Muda o fundo ao focar */
+}
+
+.form-error {
+  color: red;
+  font-size: 0.875rem;
+}
+
+.submit-button {
+  background-color: #d88f06;
+  color: #fff;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border: none;
+  width: 100%;
+}
+
+.submit-button:hover {
+  background-color: #834903;
+}
+
+.submit-button:focus {
+  outline: none;
+}

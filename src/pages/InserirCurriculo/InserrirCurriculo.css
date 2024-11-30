@@ -1,0 +1,106 @@
+/* InserirCurriculo.css */
+
+body {
+    background-color: #ffffff; /* Cor de fundo branca */
+    color: #333; /* Texto escuro para contraste */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.form-content {
+    background-color: #ffffff; /* Fundo branco para o formulário */
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-width: 600px;
+    width: 100%;
+}
+
+.form-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #333; /* Cor do título */
+    margin-bottom: 1rem;
+}
+
+.form-description {
+    text-align: center;
+    font-size: 1rem;
+    color: #555; /* Cor do texto de descrição */
+    margin-bottom: 2rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    font-size: 1rem;
+    color: #333; /* Cor dos labels */
+    margin-bottom: 0.5rem;
+}
+
+.form-input {
+    background-color: #f9f9f9; /* Fundo claro para os campos de entrada */
+    color: #333; /* Texto escuro nos campos */
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: 1px solid #ccc; /* Borda suave */
+    font-size: 1rem;
+    transition: 0.3s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    border: 1px solid #d88f06; /* Borda azul ao focar */
+    background-color: #fff; /* Muda o fundo ao focar */
+}
+
+.submit-button {
+    background-color: #d88f06;
+    color: #fff;
+    padding: 0.75rem;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border: none;
+    width: 100%;
+}
+
+.submit-button:hover {
+    background-color: #834903;
+}
+
+.submit-button:focus {
+    outline: none;
+}
+
+@media (max-width: 768px) {
+    .form-content {
+        padding: 2rem;
+    }
+
+    .form-title {
+        font-size: 1.5rem;
+    }
+
+    .form-description {
+        font-size: 0.9rem;
+    }
+}

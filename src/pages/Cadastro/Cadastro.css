@@ -1,0 +1,131 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.cadastro-container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.cadastro-left {
+    flex: 1;
+    background-color: #F5D7B2; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cadastro-logo {
+    width: 20vw;
+    height: auto;
+}
+
+.cadastro-right {
+    flex: 1;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cadastro-box {
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+h2 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.cadastro-input {
+    margin-bottom: 15px;
+}
+
+.cadastro-input label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.cadastro-input input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.role-text {
+    font-size: 14px;
+    color: #333;
+    margin: 15px 0;
+}
+
+.role-selection {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.role-button {
+    padding: 10px 20px;
+    background-color: #FF8C40;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    flex: 1;
+}
+
+.role-button.active {
+    background-color: #ef6233;
+}
+
+.cadastro-button {
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    background-color: #FF8C40;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-text {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.login-text a {
+    color: #FF8C40;
+    text-decoration: none;
+}
+
+
+@media (max-width: 768px) {
+    .cadastro-container {
+        flex-direction: column;
+    }
+
+    .cadastro-left, .cadastro-right {
+        height: auto;
+    }
+
+    .cadastro-logo {
+        width: 50vw;
+    }
+
+    .cadastro-box {
+        width: 90%;
+        padding: 10px; 
+    }
+}
